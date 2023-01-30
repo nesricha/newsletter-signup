@@ -49,7 +49,7 @@ app.post("/", function(req, res) {
 
  const request = https.request(url, options, function(response) {
 
-   if (response.statusCode === 200) {
+   if (response.statusCode > 199 && response.statusCode < 400) {
      res.sendFile(__dirname + "/success.html");
    } else {
      res.sendFile(__dirname + "/failure.html");
