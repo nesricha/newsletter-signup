@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const request = require("request");
 const https = require("https");
+const mailchimp = require("@mailchimp/mailchimp_marketing")
 
 const app = express();
 
